@@ -72,6 +72,7 @@
     <Compile Include="PageObject\PageElement\Header.cs" />
     <Compile Include="PageObject\LoginPage.cs" />
     <Compile Include="Driver\DriverFactory.cs" />
+    <Compile Include="PageObject\PageElement\Main.cs" />
     <Compile Include="PageObject\PartyPage.cs" />
     <Compile Include="PageObject\RecipesPage.cs" />
     <Compile Include="PageObject\ShopPage.cs" />
