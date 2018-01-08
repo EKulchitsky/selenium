@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="HeaderCartItemsPrice" xml:space="preserve">
+    <value>.cartItems-price</value>
+  </data>
+  <data name="HeaderCreateAccountLink" xml:space="preserve">
+    <value>.accountLinks li:nth-child(1) a:nth-child(2)</value>
+  </data>
+  <data name="HeaderFindConsultantButton" xml:space="preserve">
+    <value>#NoConsultant</value>
+  </data>
+  <data name="HeaderFindHostOrPartyButton" xml:space="preserve">
+    <value>.quickLinks li:nth-child(3) a</value>
+  </data>
+  <data name="HeaderModalEmailField" xml:space="preserve">
+    <value>#EmailAddress</value>
+  </data>
+  <data name="HeaderModalPasswordField" xml:space="preserve">
+    <value>#Password</value>
+  </data>
+  <data name="HeaderModalSignInButton" xml:space="preserve">
+    <value>#modal-submit</value>
+  </data>
+  <data name="HeaderMyAccountDropdownTrigger" xml:space="preserve">
+    <value>.accountLinks li:nth-child(1) a.myAccountDropdown-trigger</value>
+  </data>
+  <data name="HeaderMyAccountLinkName" xml:space="preserve">
+    <value>.js-accountLinksName</value>
+  </data>
+  <data name="HeaderNavBlogButton" xml:space="preserve">
+    <value>.mainNav li:nth-child(7) a</value>
+  </data>
+  <data name="HeaderNavEntertainingButton" xml:space="preserve">
+    <value>.mainNav li:nth-child(6) a</value>
+  </data>
+  <data name="HeaderNavJoinUsButton" xml:space="preserve">
+    <value>.mainNav li:nth-child(4) a</value>
+  </data>
+  <data name="HeaderNavMealKitsButton" xml:space="preserve">
+    <value>.mainNav li:nth-child(3) a</value>
+  </data>
+  <data name="HeaderNavPartyButton" xml:space="preserve">
+    <value>.mainNav li:nth-child(5) a</value>
+  </data>
+  <data name="HeaderNavRecipesButton" xml:space="preserve">
+    <value>.mainNav li:nth-child(2) a</value>
+  </data>
+  <data name="HeaderNavShopButton" xml:space="preserve">
+    <value>.mainNav li:nth-child(1) a</value>
+  </data>
+  <data name="HeaderRecipeBoxLink" xml:space="preserve">
+    <value>.accountLinks &gt; div &gt; ul &gt; li:nth-child(2) &gt; div &gt; a:nth-child(1)</value>
+  </data>
+  <data name="HeaderRecipesDropdownTrigger" xml:space="preserve">
+    <value>.accountLinks li:nth-child(2) a.myAccountDropdown-trigger</value>
+  </data>
+  <data name="HeaderSelector" xml:space="preserve">
+    <value>#js-header</value>
+  </data>
+  <data name="HeaderShearchField" xml:space="preserve">
+    <value>#mainSearch</value>
+  </data>
+  <data name="HeaderShearchSubmitButton" xml:space="preserve">
+    <value>.siteSearch-submit</value>
+  </data>
+  <data name="HeaderShoppingCartButton" xml:space="preserve">
+    <value>.cartItems</value>
+  </data>
+  <data name="HeaderShoppingCartItemsQuantity" xml:space="preserve">
+    <value>.cartItems-quantity</value>
+  </data>
+  <data name="HeaderSignInLink" xml:space="preserve">
+    <value>.accountLinks li:nth-child(1) a:nth-child(1)</value>
+  </data>
+  <data name="HeaderTsoLogo" xml:space="preserve">
+    <value>.logo</value>
+  </data>
+  <data name="HeaderWishlistDropdownTrigger" xml:space="preserve">
+    <value>.accountLinks li:nth-child(3) a.myAccountDropdown-trigger</value>
+  </data>
+  <data name="HeaderWishListLink" xml:space="preserve">
+    <value>.accountLinks &gt; div &gt; ul &gt; li:nth-child(3) &gt; div &gt; a:nth-child(1)</value>
+  </data>
+  <data name="ShopPageProductAddToCartButton" xml:space="preserve">
+    <value>.btn-add-cart</value>
+  </data>
+  <data name="FooterConnectWithUsTitle" xml:space="preserve">
+    <value>div.externalLinks &gt;div:nth-child(1) div</value>
+  </data>
+  <data name="FooterFacebookLink" xml:space="preserve">
+    <value>div.externalLinks div:nth-child(1) ul li:nth-child(1) a</value>
+  </data>
+  <data name="FooterProudMemberTitle" xml:space="preserve">
+    <value>div.externalLinks &gt;div:nth-child(2) div</value>
+  </data>
+  <data name="FooterSelector" xml:space="preserve">
+    <value>.footer</value>
+  </data>
+  <data name="NotificationProductTitle" xml:space="preserve">
+    <value>.notification-content</value>
+  </data>
+  <data name="NotificationTitle" xml:space="preserve">
+    <value>.notification-title</value>
+  </data>
+  <data name="FooterBbbLink" xml:space="preserve">
+    <value>div.externalLinks div:nth-child(2) ul li:nth-child(1) a</value>
+  </data>
+  <data name="FooterDsaLink" xml:space="preserve">
+    <value>div.externalLinks div:nth-child(2) ul li:nth-child(2) a</value>
+  </data>
+  <data name="FooterInstagramLink" xml:space="preserve">
+    <value>div.externalLinks div:nth-child(1) ul li:nth-child(5) a</value>
+  </data>
+  <data name="FooterPinterestLink" xml:space="preserve">
+    <value>div.externalLinks div:nth-child(1) ul li:nth-child(2) a</value>
+  </data>
+  <data name="FooterTwitterLink" xml:space="preserve">
+    <value>div.externalLinks div:nth-child(1) ul li:nth-child(3) a</value>
+  </data>
+  <data name="FooterYouTubeLink" xml:space="preserve">
+    <value>div.externalLinks div:nth-child(1) ul li:nth-child(4) a</value>
+  </data>
+  <data name="FooterAboutusLink" xml:space="preserve">
+    <value>.footerLinks ul:nth-child(1) li:nth-child(1) a</value>
+  </data>
+  <data name="FooterConsultantAgreementPdfLink" xml:space="preserve">
+    <value>.footerLinks ul:nth-child(3) li:nth-child(2) a</value>
+  </data>
+  <data name="FooterConsultantLoginLink" xml:space="preserve">
+    <value>.footerLinks ul:nth-child(3) li:nth-child(1) a</value>
+  </data>
+  <data name="FooterConsultantReactivationLink" xml:space="preserve">
+    <value>.footerLinks ul:nth-child(3) li:nth-child(3) a</value>
+  </data>
+  <data name="FooterConsultantSpotlightLink" xml:space="preserve">
+    <value>.footerLinks ul:nth-child(3) li:nth-child(4) a</value>
+  </data>
+  <data name="FooterContactUsLink" xml:space="preserve">
+    <value>.footerLinks ul:nth-child(1) li:nth-child(3) a</value>
+  </data>
+  <data name="FooterDsaCodeOfEthicslink" xml:space="preserve">
+    <value>.footerLinks ul:nth-child(3) li:nth-child(5) a</value>
+  </data>
+  <data name="FooterECatalogFallWinter" xml:space="preserve">
+    <value>.footerLinks ul:nth-child(2) li:nth-child(2) a</value>
+  </data>
+  <data name="FooterEmploymentLink" xml:space="preserve">
+    <value>.footerLinks ul:nth-child(1) li:nth-child(4) a</value>
+  </data>
+  <data name="FooterFindConsultantLink" xml:space="preserve">
+    <value>.footerLinks ul:nth-child(2) li:nth-child(1) a</value>
+  </data>
+  <data name="FooterGuaranteeLink" xml:space="preserve">
+    <value>.footerLinks ul:nth-child(1) li:nth-child(2) a</value>
+  </data>
+  <data name="FooterMealKitDeliveryService" xml:space="preserve">
+    <value>.footerLinks ul:nth-child(2) li:nth-child(5) a</value>
+  </data>
+  <data name="FooterOurProductsLink" xml:space="preserve">
+    <value>.footerLinks ul:nth-child(2) li:nth-child(4) a</value>
+  </data>
+  <data name="FooterPrivacyPolicyLink" xml:space="preserve">
+    <value>.footerLinks ul:nth-child(2) li:nth-child(6) a</value>
+  </data>
+  <data name="FooterShippingAndDeliveryLink" xml:space="preserve">
+    <value>.footerLinks ul:nth-child(1) li:nth-child(5) a</value>
+  </data>
+  <data name="FooterSpecialOffersLink" xml:space="preserve">
+    <value>.footerLinks ul:nth-child(2) li:nth-child(3) a</value>
+  </data>
+  <data name="FooterTermsOfUseLink" xml:space="preserve">
+    <value>.footerLinks ul:nth-child(1) li:nth-child(6) a</value>
+  </data>
+  <data name="ShopPageNavMenu30MealKits" xml:space="preserve">
+    <value>30-mealkits</value>
+  </data>
+  <data name="ShopPageProductViewDetailsButton" xml:space="preserve">
+    <value>.btn-view-detail</value>
+  </data>
+  <data name="Breadcrubm" xml:space="preserve">
+    <value>.breadcrumbs.hiddenOnMobile ol</value>
+  </data>
+</root>
