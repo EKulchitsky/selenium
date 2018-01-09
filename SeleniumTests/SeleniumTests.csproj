@@ -76,6 +76,16 @@
     <Compile Include="PageObject\PartyPage.cs" />
     <Compile Include="PageObject\RecipesPage.cs" />
     <Compile Include="PageObject\ShopPage.cs" />
+    <Compile Include="Resources\Breadcrumbs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Breadcrumbs.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ElementText.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ElementText.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\PageUrls.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -101,6 +111,14 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\Breadcrumbs.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Breadcrumbs.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ElementText.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ElementText.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\PageUrls.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>PageUrls.Designer.cs</LastGenOutput>

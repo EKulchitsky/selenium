@@ -33,18 +33,14 @@ namespace TastefullySimple.IntegrationTests.PageObject.PageElement
             return new HomePage(Driver);
         }
 
-        public BasePage NavigateToHeaderMenu(string selector)
+        public void NavigateToHeaderMenu(string selector)
         {
             GetElement(selector).Click();
-
-            return new BasePage(Driver);
         }
 
-        public ShopPage NavigateToShopPage()
+        public void NavigateToShopPage()
         {
-            GetElement(Selectors.HeaderNavShopButton).Click();
-
-            return new ShopPage(Driver);
+            GetElement(Selectors.HeaderNavShopButton).Click();            
         }
 
         public RecipesPage NavigateToRecipesPage()

@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium.Remote;
 using System;
-using TastefullySimple.IntegrationTests.Resources;
 
 namespace TastefullySimple.IntegrationTests.PageObject.PageElement
 {
@@ -12,12 +11,5 @@ namespace TastefullySimple.IntegrationTests.PageObject.PageElement
 
         }
 
-
-        public string GetBreadcrumbText(String selector)
-        {
-            var BreadcrumbText = Driver.FindElementByCssSelector(selector).Text;
-
-            return BreadcrumbText;
-        }
     }
 }

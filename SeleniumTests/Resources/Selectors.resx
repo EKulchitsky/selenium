@@ -213,10 +213,10 @@
   <data name="FooterSelector" xml:space="preserve">
     <value>.footer</value>
   </data>
-  <data name="NotificationProductTitle" xml:space="preserve">
+  <data name="NotificationMessageProductTitle" xml:space="preserve">
     <value>.notification-content</value>
   </data>
-  <data name="NotificationTitle" xml:space="preserve">
+  <data name="NotificationMessageTitle" xml:space="preserve">
     <value>.notification-title</value>
   </data>
   <data name="FooterBbbLink" xml:space="preserve">
@@ -294,7 +294,10 @@
   <data name="ShopPageProductViewDetailsButton" xml:space="preserve">
     <value>.btn-view-detail</value>
   </data>
-  <data name="Breadcrubm" xml:space="preserve">
+  <data name="Breadcrumbs" xml:space="preserve">
     <value>.breadcrumbs.hiddenOnMobile ol</value>
+  </data>
+  <data name="ShopPageSearchFiltersSelected" xml:space="preserve">
+    <value>searchFilters-selected</value>
   </data>
 </root>

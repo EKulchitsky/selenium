@@ -63,9 +63,9 @@ namespace TastefullySimple.IntegrationTests.Resources {
         /// <summary>
         ///   Looks up a localized string similar to .breadcrumbs.hiddenOnMobile ol.
         /// </summary>
-        internal static string Breadcrubm {
+        internal static string Breadcrumbs {
             get {
-                return ResourceManager.GetString("Breadcrubm", resourceCulture);
+                return ResourceManager.GetString("Breadcrumbs", resourceCulture);
             }
         }
         
@@ -558,18 +558,18 @@ namespace TastefullySimple.IntegrationTests.Resources {
         /// <summary>
         ///   Looks up a localized string similar to .notification-content.
         /// </summary>
-        internal static string NotificationProductTitle {
+        internal static string NotificationMessageProductTitle {
             get {
-                return ResourceManager.GetString("NotificationProductTitle", resourceCulture);
+                return ResourceManager.GetString("NotificationMessageProductTitle", resourceCulture);
             }
         }
         
         /// <summary>
         ///   Looks up a localized string similar to .notification-title.
         /// </summary>
-        internal static string NotificationTitle {
+        internal static string NotificationMessageTitle {
             get {
-                return ResourceManager.GetString("NotificationTitle", resourceCulture);
+                return ResourceManager.GetString("NotificationMessageTitle", resourceCulture);
             }
         }
         
@@ -597,6 +597,15 @@ namespace TastefullySimple.IntegrationTests.Resources {
         internal static string ShopPageProductViewDetailsButton {
             get {
                 return ResourceManager.GetString("ShopPageProductViewDetailsButton", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to searchFilters-selected.
+        /// </summary>
+        internal static string ShopPageSearchFiltersSelected {
+            get {
+                return ResourceManager.GetString("ShopPageSearchFiltersSelected", resourceCulture);
             }
         }
     }
