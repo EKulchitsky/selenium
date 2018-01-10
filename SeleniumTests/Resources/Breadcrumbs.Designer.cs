@@ -70,5 +70,15 @@ namespace TastefullySimple.IntegrationTests.Resources {
                 return ResourceManager.GetString("Breadcrumb30MealKits", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to home
+        ///your cart.
+        /// </summary>
+        internal static string BreadcrumbShoppingCartPage {
+            get {
+                return ResourceManager.GetString("BreadcrumbShoppingCartPage", resourceCulture);
+            }
+        }
     }
 }

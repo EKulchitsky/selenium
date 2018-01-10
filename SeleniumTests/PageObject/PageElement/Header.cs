@@ -33,6 +33,11 @@ namespace TastefullySimple.IntegrationTests.PageObject.PageElement
             return new HomePage(Driver);
         }
 
+        public void NavigateToShoppingCartPage(string selector)
+        {
+            GetElement(selector).Click();
+        }
+
         public void NavigateToHeaderMenu(string selector)
         {
             GetElement(selector).Click();

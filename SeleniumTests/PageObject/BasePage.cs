@@ -10,6 +10,16 @@ namespace TastefullySimple.IntegrationTests.PageObject
         public BasePage(RemoteWebDriver driver)
         {
             this.driver = driver;
+
+            header = new Header(driver);
         }
+
+        protected Header header;
+
+        public Header getHeader()
+        {
+            return header;
+        }
+
     }
 }

@@ -77,5 +77,23 @@ namespace TastefullySimple.IntegrationTests.Resources {
                 return ResourceManager.GetString("NavMenu30MealKitsText", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your cart is empty.
+        /// </summary>
+        internal static string ShoppingCartPageCartItemsBoxDefaultTitle {
+            get {
+                return ResourceManager.GetString("ShoppingCartPageCartItemsBoxDefaultTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to your cart.
+        /// </summary>
+        internal static string ShoppingCartPageHeaderText {
+            get {
+                return ResourceManager.GetString("ShoppingCartPageHeaderText", resourceCulture);
+            }
+        }
     }
 }

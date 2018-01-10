@@ -608,5 +608,41 @@ namespace TastefullySimple.IntegrationTests.Resources {
                 return ResourceManager.GetString("ShopPageSearchFiltersSelected", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to div.cart-items-box.gap ul li.
+        /// </summary>
+        internal static string ShoppingCartPageCartItemsBox {
+            get {
+                return ResourceManager.GetString("ShoppingCartPageCartItemsBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to thead tr th:nth-child(1).
+        /// </summary>
+        internal static string ShoppingCartPageItemBoxTitleWithProducts {
+            get {
+                return ResourceManager.GetString("ShoppingCartPageItemBoxTitleWithProducts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .cartItemList-row-item h4 a.
+        /// </summary>
+        internal static string ShoppingCartPageProductNameInItemBox {
+            get {
+                return ResourceManager.GetString("ShoppingCartPageProductNameInItemBox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to h2.hdg_1.
+        /// </summary>
+        internal static string ShoppingCartPageTitle {
+            get {
+                return ResourceManager.GetString("ShoppingCartPageTitle", resourceCulture);
+            }
+        }
     }
 }

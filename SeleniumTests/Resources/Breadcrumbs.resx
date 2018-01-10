@@ -122,4 +122,8 @@
 Shop
 30-Meal Kits</value>
   </data>
+  <data name="BreadcrumbShoppingCartPage" xml:space="preserve">
+    <value>home
+your cart</value>
+  </data>
 </root>

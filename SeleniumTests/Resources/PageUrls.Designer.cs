@@ -241,6 +241,15 @@ namespace TastefullySimple.IntegrationTests.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to https://www.tastefullysimple.com/shopping-cart.
+        /// </summary>
+        internal static string ShoppingCartUrl {
+            get {
+                return ResourceManager.GetString("ShoppingCartUrl", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to https://www.tastefullysimple.com/special-offers.
         /// </summary>
         internal static string SpecialOffers {

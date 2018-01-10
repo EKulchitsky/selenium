@@ -13,7 +13,7 @@ namespace TastefullySimple.IntegrationTests.Tests
     {
 
         [TestClass]
-        public class MainPageTests
+        public class Shop_Page_Tests
         {
 
             private RemoteWebDriver _driver;

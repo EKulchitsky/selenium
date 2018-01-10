@@ -123,4 +123,10 @@
   <data name="NavMenu30MealKitsText" xml:space="preserve">
     <value>30-meal kits (1)</value>
   </data>
+  <data name="ShoppingCartPageCartItemsBoxDefaultTitle" xml:space="preserve">
+    <value>Your cart is empty</value>
+  </data>
+  <data name="ShoppingCartPageHeaderText" xml:space="preserve">
+    <value>your cart</value>
+  </data>
 </root>

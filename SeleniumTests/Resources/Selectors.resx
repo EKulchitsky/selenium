@@ -300,4 +300,16 @@
   <data name="ShopPageSearchFiltersSelected" xml:space="preserve">
     <value>searchFilters-selected</value>
   </data>
+  <data name="ShoppingCartPageTitle" xml:space="preserve">
+    <value>h2.hdg_1</value>
+  </data>
+  <data name="ShoppingCartPageCartItemsBox" xml:space="preserve">
+    <value>div.cart-items-box.gap ul li</value>
+  </data>
+  <data name="ShoppingCartPageItemBoxTitleWithProducts" xml:space="preserve">
+    <value>thead tr th:nth-child(1)</value>
+  </data>
+  <data name="ShoppingCartPageProductNameInItemBox" xml:space="preserve">
+    <value>.cartItemList-row-item h4 a</value>
+  </data>
 </root>
