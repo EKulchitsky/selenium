@@ -61,6 +61,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DriverExtensions.cs" />
+    <Compile Include="PageObject\PageElement\ElementWithData.cs" />
+    <Compile Include="PageObject\PageElement\ProductCatalogItem.cs" />
     <Compile Include="PageObject\BasePage.cs" />
     <Compile Include="PageObject\BlogPage.cs" />
     <Compile Include="PageObject\CartPage.cs" />
@@ -116,6 +118,7 @@
     <EmbeddedResource Include="Resources\Breadcrumbs.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Breadcrumbs.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\ElementText.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -129,6 +132,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Selectors.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Entities\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

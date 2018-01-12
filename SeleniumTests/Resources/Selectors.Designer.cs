@@ -574,6 +574,15 @@ namespace TastefullySimple.IntegrationTests.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .catalogItem_product.
+        /// </summary>
+        internal static string ProductCatalogItems {
+            get {
+                return ResourceManager.GetString("ProductCatalogItems", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to 30-mealkits.
         /// </summary>
         internal static string ShopPageNavMenu30MealKits {
@@ -642,6 +651,15 @@ namespace TastefullySimple.IntegrationTests.Resources {
         internal static string ShoppingCartPageTitle {
             get {
                 return ResourceManager.GetString("ShoppingCartPageTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .catalogItem-price.
+        /// </summary>
+        internal static string ShopProductItemPrice {
+            get {
+                return ResourceManager.GetString("ShopProductItemPrice", resourceCulture);
             }
         }
     }

@@ -33,63 +33,10 @@ namespace TastefullySimple.IntegrationTests.PageObject.PageElement
             return new HomePage(Driver);
         }
 
-        public void NavigateToShoppingCartPage(string selector)
+        public void ClickHeaderElement(string selector)
         {
             GetElement(selector).Click();
         }
-
-        public void NavigateToHeaderMenu(string selector)
-        {
-            GetElement(selector).Click();
-        }
-
-        public void NavigateToShopPage()
-        {
-            GetElement(Selectors.HeaderNavShopButton).Click();            
-        }
-
-        public RecipesPage NavigateToRecipesPage()
-        {
-            GetElement(Selectors.HeaderNavRecipesButton).Click();
-
-            return new RecipesPage(Driver);
-        }
-
-        public MealKitsPage NavigateToMealKitsPage()
-        {
-            GetElement(Selectors.HeaderNavMealKitsButton).Click();
-
-            return new MealKitsPage(Driver);
-        }
-
-        public JoinUsPage NavigateToJoinUsPage()
-        {
-            GetElement(Selectors.HeaderNavJoinUsButton).Click();
-
-            return new JoinUsPage(Driver);
-        }
-
-        public PartyPage NavigateToPartyPage()
-        {
-            GetElement(Selectors.HeaderNavPartyButton).Click();
-
-            return new PartyPage(Driver);
-        }
-
-        public EntertainingPage NavigateToEntertainingPage()
-        {
-            GetElement(Selectors.HeaderNavEntertainingButton).Click();
-
-            return new EntertainingPage(Driver);
-        }
-
-        public BlogPage NavigateToBlogPage()
-        {
-            GetElement(Selectors.HeaderNavBlogButton).Click();
-
-            return new BlogPage(Driver);
-        }
-
     }
 }
 

@@ -303,6 +303,9 @@
   <data name="ShoppingCartPageTitle" xml:space="preserve">
     <value>h2.hdg_1</value>
   </data>
+  <data name="ProductCatalogItems" xml:space="preserve">
+    <value>.catalogItem_product</value>
+  </data>
   <data name="ShoppingCartPageCartItemsBox" xml:space="preserve">
     <value>div.cart-items-box.gap ul li</value>
   </data>
@@ -311,5 +314,8 @@
   </data>
   <data name="ShoppingCartPageProductNameInItemBox" xml:space="preserve">
     <value>.cartItemList-row-item h4 a</value>
+  </data>
+  <data name="ShopProductItemPrice" xml:space="preserve">
+    <value>.catalogItem-price</value>
   </data>
 </root>

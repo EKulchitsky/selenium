@@ -1,5 +1,7 @@
-﻿using OpenQA.Selenium.Remote;
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Remote;
 using System;
+using TastefullySimple.IntegrationTests.PageObject.PageElement;
 
 namespace TastefullySimple.IntegrationTests.PageObject
 {
@@ -15,5 +17,8 @@ namespace TastefullySimple.IntegrationTests.PageObject
             return driver.FindElementByCssSelector(selector).Text;
         }
 
+        public ProductCatalogItem GetRandomProductCatalogItem() {
+            return new ProductCatalogItem(driver.FindElementRandomly(By.CssSelector(".catalogItem_product:has(.btn-add-cart)")).Item1, driver);
+        }
     }
 }

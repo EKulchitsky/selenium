@@ -41,7 +41,7 @@ namespace TastefullySimple.IntegrationTests.Tests
         {
             var footerConnectWithUsTitle = driver.FindElementByCssSelector(Selectors.FooterConnectWithUsTitle).Text;
 
-            Assert.AreEqual("connect with us", footerConnectWithUsTitle);
+            Assert.AreEqual("connect with us", footerConnectWithUsTitle);            
         }
 
         [TestMethod]

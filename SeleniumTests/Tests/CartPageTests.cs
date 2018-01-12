@@ -6,14 +6,13 @@ using System;
 using OpenQA.Selenium.Support.UI;
 using OpenQA.Selenium;
 using TastefullySimple.IntegrationTests.PageObject.PageElement;
+//using TastefullySimple.IntegrationTests.Entities;
 
 namespace TastefullySimple.IntegrationTests.Tests
 {
-    class CartPageTests
-    {
 
         [TestClass]
-        public class Cart_Page_Tests
+        public class CartPageTests
         {
 
             private RemoteWebDriver _driver;
@@ -46,7 +45,7 @@ namespace TastefullySimple.IntegrationTests.Tests
             public void Cart_Page_Has_Correct_Url()
             {
 
-                _cart.getHeader().NavigateToShoppingCartPage(Selectors.HeaderShoppingCartButton);
+                _cart.Header.ClickHeaderElement(Selectors.HeaderShoppingCartButton);
 
                 Assert.AreEqual(PageUrls.ShoppingCartUrl, _driver.Url);
 
@@ -56,7 +55,7 @@ namespace TastefullySimple.IntegrationTests.Tests
             public void Shopping_Cart_Page_Has_Correct_Title()
             {
 
-                _cart.getHeader().NavigateToShoppingCartPage(Selectors.HeaderShoppingCartButton);
+                _cart.Header.ClickHeaderElement(Selectors.HeaderShoppingCartButton);
 
                 var shoppingCartPageHeaderText = _driver.FindElementByCssSelector(Selectors.ShoppingCartPageTitle).Text;
                 Assert.AreEqual(ElementText.ShoppingCartPageHeaderText, shoppingCartPageHeaderText);
@@ -67,7 +66,7 @@ namespace TastefullySimple.IntegrationTests.Tests
             public void Shopping_Cart_Page_Has_Correct_Breadcrumbs()
             {
 
-                _cart.getHeader().NavigateToHeaderMenu(Selectors.HeaderShoppingCartButton);
+                _cart.Header.ClickHeaderElement(Selectors.HeaderShoppingCartButton);
 
                 var shoppingCartPageBreadcrumbsText = _driver.FindElementByCssSelector(Selectors.Breadcrumbs).Text;
                 Assert.AreEqual(Breadcrumbs.BreadcrumbShoppingCartPage, shoppingCartPageBreadcrumbsText);
@@ -78,37 +77,61 @@ namespace TastefullySimple.IntegrationTests.Tests
             public void Shopping_Cart_Page_Items_Box_Has_No_Products_By_Default()
             {
 
-                _cart.getHeader().NavigateToShoppingCartPage(Selectors.HeaderShoppingCartButton);
+                _cart.Header.ClickHeaderElement(Selectors.HeaderShoppingCartButton);
 
                 var shoppingCartPageItemsBoxDefaultTitle = _driver.FindElementByCssSelector(Selectors.ShoppingCartPageCartItemsBox).Text;
                 Assert.AreEqual(ElementText.ShoppingCartPageCartItemsBoxDefaultTitle, shoppingCartPageItemsBoxDefaultTitle);
 
             }
 
-            //[TestMethod]
+            [TestMethod]
             public void Shopping_Cart_Page_Product_Added_With_Correct_Name_Price_Qty()
-            {                
+            {
 
-                _shopPage.getHeader().NavigateToShopPage();
+                _shopPage.Header.ClickHeaderElement(Selectors.HeaderNavShopButton);
 
-                var productItemAddToCartButton = _driver.FindElementRandomly(Selectors.ShopPageProductAddToCartButton).Item1;
+                var shopProductItemAddToCartButton = _driver.FindElementRandomly("catalogItem catalogItem_product").Item1;
 
-                var productItemName = productItemAddToCartButton.GetAttribute("data-title");
-
-                var productPriceStrike = productItemAddToCartButton.GetCssValue("div.catalogItem-ft span");
-
-                productItemAddToCartButton.Click();
+                /*var shopProductItem = new Product()
+                {
+                    Name = shopProductItemAddToCartButton.GetAttribute("data-title"),
+                    //StrikePrice = double.Parse(shopProductItemAddToCartButton.GetCssValue("catalogItem-price").Replace("$", "")),
+                    StrikePrice = GetStrikePrice(shopProductItemAddToCartButton)
+                };
+                */
+                shopProductItemAddToCartButton.FindElement(By.CssSelector(Selectors.ShopPageProductAddToCartButton)).Click();
 
                 WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromMilliseconds(5000));
                 wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector(Selectors.NotificationMessageTitle)));
 
-                _cart.getHeader().NavigateToShoppingCartPage(Selectors.HeaderShoppingCartButton);
+                _cart.Header.ClickHeaderElement(Selectors.HeaderShoppingCartButton);
 
-                var productItemInShoppingCart = _driver.FindElementByCssSelector(Selectors.ShoppingCartPageProductNameInItemBox).Text;
-                Assert.AreEqual(productItemName, productItemInShoppingCart);
+                /*var shoppingCartProductItem = new Product()
+                {
+                    Name = _driver.FindElementByClassName(Selectors.ShoppingCartPageProductNameInItemBox).Text,
+                    StrikePrice = double.Parse(shopProductItemAddToCartButton.GetCssValue(".cartItemList-row-price span")),
+                };
 
+         */
+                //Assert.AreEqual(shopProductItem, shoppingCartProductItem);
+
+            }
+
+            private double GetStrikePrice(IWebElement el)
+            {                
+                switch (el.FindElements(By.CssSelector("catalogItem-ft span")).Count)
+                {
+                    case 1:
+                        return double.Parse(el.GetCssValue("catalogItem-price").Replace("$", ""));
+                    case 2:
+                        return double.Parse(el.GetCssValue("catalogItem-price_strike").Replace("$", ""));
+
+                    default: break;
+                }
+
+                return 0.0;
             }
         }
     }
-}
+
 

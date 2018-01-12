@@ -16,9 +16,12 @@ namespace TastefullySimple.IntegrationTests.PageObject
 
         protected Header header;
 
-        public Header getHeader()
+        public Header Header
         {
-            return header;
+            get
+            {
+                return header;
+            }            
         }
 
     }

@@ -43,7 +43,7 @@ namespace TastefullySimple.IntegrationTests.Tests
             public void Select_30_Meal_Kits_In_Navigation_Menu()
             {
 
-                _shopPage.getHeader().NavigateToHeaderMenu(Selectors.HeaderNavShopButton);
+                _shopPage.Header.ClickHeaderElement(Selectors.HeaderNavShopButton);
 
                 _driver.FindElementById(Selectors.ShopPageNavMenu30MealKits).Click();
                 Assert.AreEqual(PageUrls.Tso30MealKitsPage, _driver.Url);
@@ -54,7 +54,7 @@ namespace TastefullySimple.IntegrationTests.Tests
             public void Breadcrumbs_Has_Correct_Text_After_30_Meal_Kits_Selected()
             {
 
-                _shopPage.getHeader().NavigateToHeaderMenu(Selectors.HeaderNavShopButton);
+                _shopPage.Header.ClickHeaderElement(Selectors.HeaderNavShopButton);
 
                 _driver.FindElementById(Selectors.ShopPageNavMenu30MealKits).Click();
 
@@ -67,7 +67,7 @@ namespace TastefullySimple.IntegrationTests.Tests
             public void Selected_Item_Has_Class_Selected()
             {
 
-                _shopPage.getHeader().NavigateToHeaderMenu(Selectors.HeaderNavShopButton);
+                _shopPage.Header.ClickHeaderElement(Selectors.HeaderNavShopButton);
 
                 _driver.FindElementById(Selectors.ShopPageNavMenu30MealKits).Click();
 
@@ -79,7 +79,7 @@ namespace TastefullySimple.IntegrationTests.Tests
             public void Selected_Menu_Item_Has_Correct_Text()
             {
 
-                _shopPage.getHeader().NavigateToHeaderMenu(Selectors.HeaderNavShopButton);
+                _shopPage.Header.ClickHeaderElement(Selectors.HeaderNavShopButton);
 
                 _driver.FindElementById(Selectors.ShopPageNavMenu30MealKits).Click();
 
@@ -92,15 +92,13 @@ namespace TastefullySimple.IntegrationTests.Tests
             [TestMethod]
             public void User_Is_Able_To_Add_A_Product_To_Cart()
             {
-                HomePage HomePage = _loginPage.getHeader().LogIn();
+                HomePage HomePage = _loginPage.Header.LogIn();                    
 
-                _shopPage.getHeader().NavigateToShopPage();
+                _shopPage.Header.ClickHeaderElement(Selectors.HeaderNavShopButton);
+                                
+                ProductCatalogItem productCatalogItem = _shopPage.GetRandomProductCatalogItem();
 
-                var productItemAddToCartButton = _driver.FindElementRandomly(Selectors.ShopPageProductAddToCartButton).Item1;
-
-                var productItemName = productItemAddToCartButton.GetAttribute("data-title");
-
-                productItemAddToCartButton.Click();
+                productCatalogItem.ClickAddtoCartButton();
 
                 WebDriverWait wait = new WebDriverWait(_driver, TimeSpan.FromMilliseconds(5000));
                 wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector(Selectors.NotificationMessageTitle)));

@@ -8,9 +8,20 @@ namespace TastefullySimple.IntegrationTests
 {
     public static class DriverExtensions
     {
-        public static Tuple<IWebElement,int> FindElementRandomly(this RemoteWebDriver driver,string containerSelector)
+        public static Tuple<IWebElement,int> FindElementRandomly(this RemoteWebDriver driver,By containerSelector)
         {
-            var elements = driver.FindElements(By.CssSelector(containerSelector)).ToList();
+            var elements = driver.FindElements(containerSelector).ToList();
+
+            int index = new Random().Next(0, elements.Count);
+
+            return new Tuple<IWebElement, int>(elements[index], index);
+        }
+
+        public static Tuple<IWebElement, int> FindElementRandomly(this RemoteWebDriver driver, By containerSelector,Func<IWebElement,bool> predicate)
+        {
+            var elements = driver.FindElements(containerSelector)
+                                    .Where(predicate)
+                                    .ToList();
 
             int index = new Random().Next(0, elements.Count);
 
