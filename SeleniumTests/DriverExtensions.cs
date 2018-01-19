@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
+using OpenQA.Selenium.Support.UI;
 using System;
 using System.Linq;
 
@@ -34,6 +35,12 @@ namespace TastefullySimple.IntegrationTests
             driver.SwitchTo().Window(handles.Last());
 
             return driver;
+        }
+
+        public static void WaitForElementVisible(this RemoteWebDriver driver, string selector, int time)
+        {
+            WebDriverWait wait = new WebDriverWait(driver, TimeSpan.FromMilliseconds(time));
+            wait.Until(ExpectedConditions.ElementIsVisible(By.CssSelector(selector)));
         }
     }
 }

@@ -1,11 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TastefullySimple.IntegrationTests.Resources;
 
 namespace TastefullySimple.IntegrationTests.PageObject.PageElement

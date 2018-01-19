@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace TastefullySimple.IntegrationTests.PageObject.PageElement
 {
-    //TO-DO: MOve it to separate file. 
+    //TO-DO: Move it to separate file. 
     public class ShortImplicitWait : IDisposable
     {
         private readonly IWebDriver _webDriver;
@@ -26,6 +26,8 @@ namespace TastefullySimple.IntegrationTests.PageObject.PageElement
 
     public class ElementWithData : BaseElement
     {
+        private const int maxStringLength = 30;
+
         private Dictionary<string, By> _dataSelectors;
 
         public Dictionary<string, string> Data { get; }
@@ -43,7 +45,8 @@ namespace TastefullySimple.IntegrationTests.PageObject.PageElement
                     var elements = webElement.FindElements(dataSelector.Value);
                     if (elements.Any())
                     {
-                        Data[dataSelector.Key] = elements.First().Text;
+                        Data[dataSelector.Key] = elements.First().Text.Substring(0, elements.First().Text.Length > maxStringLength 
+                                                                                    ? maxStringLength : elements.First().Text.Length);
                     }                 
                 }
             }            

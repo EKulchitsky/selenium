@@ -18,7 +18,7 @@ namespace TastefullySimple.IntegrationTests.PageObject
         }
 
         public ProductCatalogItem GetRandomProductCatalogItem() {
-            return new ProductCatalogItem(driver.FindElementRandomly(By.CssSelector(".catalogItem_product:has(.btn-add-cart)")).Item1, driver);
+            return new ProductCatalogItem(driver.FindElementRandomly(By.XPath("//*[@class='catalogItem catalogItem_product' and .//a[contains(.,'add to cart')]]")).Item1, driver);
         }
     }
 }

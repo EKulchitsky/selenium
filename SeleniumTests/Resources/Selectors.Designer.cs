@@ -619,6 +619,15 @@ namespace TastefullySimple.IntegrationTests.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to .cartItemList-row-item a.
+        /// </summary>
+        internal static string ShoppingCartPageCartItemName {
+            get {
+                return ResourceManager.GetString("ShoppingCartPageCartItemName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to div.cart-items-box.gap ul li.
         /// </summary>
         internal static string ShoppingCartPageCartItemsBox {

@@ -318,4 +318,7 @@
   <data name="ShopProductItemPrice" xml:space="preserve">
     <value>.catalogItem-price</value>
   </data>
+  <data name="ShoppingCartPageCartItemName" xml:space="preserve">
+    <value>.cartItemList-row-item a</value>
+  </data>
 </root>

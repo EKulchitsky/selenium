@@ -62,6 +62,7 @@
   <ItemGroup>
     <Compile Include="DriverExtensions.cs" />
     <Compile Include="PageObject\PageElement\ElementWithData.cs" />
+    <Compile Include="PageObject\PageElement\ProductCartItem.cs" />
     <Compile Include="PageObject\PageElement\ProductCatalogItem.cs" />
     <Compile Include="PageObject\BasePage.cs" />
     <Compile Include="PageObject\BlogPage.cs" />
